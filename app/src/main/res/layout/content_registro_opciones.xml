@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_registro_opciones"
+    tools:context="com.android.rbarrientos.needer.RegistroOpciones">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton5"
+        android:src="@drawable/left11"
+        android:onClick="irRegistro"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/add40"
+        android:layout_marginTop="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Método de Pago"
+        android:id="@+id/btnMPago"
+        android:onClick="irMPago"
+        android:layout_below="@+id/imageButton5"
+        android:layout_marginTop="64dp"
+        android:layout_alignRight="@+id/btnMCobro"
+        android:layout_alignEnd="@+id/btnMCobro"
+        android:layout_alignLeft="@+id/btnMCobro"
+        android:layout_alignStart="@+id/btnMCobro" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Método de Cobro"
+        android:id="@+id/btnMCobro"
+        android:onClick="irMCobro"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Registro"
+        android:id="@+id/btnCRegistro"
+        android:layout_below="@+id/btnMCobro"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2"
+        android:layout_marginTop="73dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahora No"
+        android:id="@+id/chkNoPago"
+        android:layout_below="@+id/btnMPago"
+        android:layout_alignRight="@+id/btnMPago"
+        android:layout_alignEnd="@+id/btnMPago"
+        android:layout_marginTop="17dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahora No"
+        android:id="@+id/chkNoCobro"
+        android:layout_below="@+id/btnMCobro"
+        android:layout_alignRight="@+id/chkNoPago"
+        android:layout_alignEnd="@+id/chkNoPago"
+        android:layout_marginTop="20dp"
+        android:checked="false" />
+
+</RelativeLayout>
